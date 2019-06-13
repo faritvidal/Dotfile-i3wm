@@ -1,7 +1,7 @@
 # Dotfile for i3wm by Farit Vidal
 My configuration for i3wm
 
-#Installation
+# Installation
 ```
 git clone https://github.com/faritvidal/Dotfile-i3wm.git
 
