@@ -65,28 +65,28 @@ cd -
 echo "+++++++++++++++++++++++++++++"
 echo "Copying the pictures"
 echo "+++++++++++++++++++++++++++++"
-cp $PWD/images/ $HOME/Pictures/
+cp $PWD/images/* $HOME/Pictures/
 echo "+++++++++++++++++++++++++++++"
 echo "Copying scripts files"
 echo "+++++++++++++++++++++++++++++"
-cp $PWD/scripts/ $HOME/.bin/scripts/
+cp $PWD/scripts/* $HOME/.bin/scripts/
 sudo chmod +x  $HOME/.bin/scripts/lock.sh
 sudo chmod +x  $HOME/.bin/scripts/i3exit
 echo "+++++++++++++++++++++++++++++"
 echo "Copying rofi theme"
 echo "+++++++++++++++++++++++++++++"
-cp $PWD/rofi/ $HOME/
+cp $PWD/rofi/* $HOME/
 echo "+++++++++++++++++++++++++++++"
 echo "Copying Font files"
 echo "+++++++++++++++++++++++++++++"
 mkdir -p $HOME/.fonts
-cp $PWD/fonts/ $HOME/.fonts/
+cp $PWD/fonts/* $HOME/.fonts/
 echo "+++++++++++++++++++++++++++++"
 echo "Copying i3wm Config File"
 echo "+++++++++++++++++++++++++++++"
 now=$(date +%Y-%m-%d)
 mv $HOME/.config/i3/config $HOME/.config/i3/config_bkp_$now
-cp $PWD/configFile/ $HOME/.config/i3/
+cp $PWD/configFile/* $HOME/.config/i3/
 echo "+++++++++++++++++++++++++++++"
 echo "Finish"
 echo "+++++++++++++++++++++++++++++"
