@@ -1,4 +1,4 @@
-#!/bin/bash
+sudo#!/bin/bash -xe
 #design for ubuntu 18.04 fully tested
 #creted by Farit Vidal
 #created at :6-13-2019
@@ -6,7 +6,7 @@
 echo "+++++++++++++++++++++++++++++"
 echo "Installing dependencies"
 echo "+++++++++++++++++++++++++++++"
-sudo apt update && apt upgrade
+sudo apt update && sudo apt upgrade
 sudo apt install lightdm suckless-tools ssh blueman terminator wget git zsh i3 neofetch htop ncdu unrar geany thunar lxappearance xbacklight pavucontrol flameshot rofi compton feh arandr network-manager-openvpn python-pip xfonts-terminus
 cd $HOME/Downloads
 sudo wget https://github.com/meetfranz/franz/releases/download/v5.1.0/franz_5.1.0_amd64.deb
