@@ -61,6 +61,7 @@ echo "+++++++++++++++++++++++++++++"
 mkdir -p $HOME/.bin/scripts
 cd $HOME/.bin/scripts/
 git clone https://github.com/tobi-wan-kenobi/bumblebee-status.git
+sudo chown $USER:$USER -R bumblebee-status
 cd -
 echo "+++++++++++++++++++++++++++++"
 echo "Copying the pictures"
@@ -70,23 +71,24 @@ echo "+++++++++++++++++++++++++++++"
 echo "Copying scripts files"
 echo "+++++++++++++++++++++++++++++"
 cp $PWD/scripts/* $HOME/.bin/scripts/
-sudo chmod +x  $HOME/.bin/scripts/lock.sh
-sudo chmod +x  $HOME/.bin/scripts/i3exit
+sudo chmod +x  $HOME/.bin/scripts/{lock.sh,i3exit} 
+sudo chown $USER:$USER $HOME/.bin/scripts/{lock.sh,i3exit}
 echo "+++++++++++++++++++++++++++++"
 echo "Copying rofi theme"
 echo "+++++++++++++++++++++++++++++"
-cp $PWD/rofi/* $HOME/
+cp $PWD/rofi/* $HOME/ && sudo chown $USER:$USER $HOME/Adapta.rasi
 echo "+++++++++++++++++++++++++++++"
 echo "Copying Font files"
 echo "+++++++++++++++++++++++++++++"
 mkdir -p $HOME/.fonts
-cp $PWD/fonts/* $HOME/.fonts/
+cp $PWD/fonts/* $HOME/.fonts/ && sudo chown $USER:$USER $HOME/.fonts/*
 echo "+++++++++++++++++++++++++++++"
 echo "Copying i3wm Config File"
 echo "+++++++++++++++++++++++++++++"
 now=$(date +%Y-%m-%d)
 mv $HOME/.config/i3/config $HOME/.config/i3/config_bkp_$now
 cp $PWD/configFile/* $HOME/.config/i3/
+sudo chown $USER:$USER $HOME/.config/i3/config
 echo "+++++++++++++++++++++++++++++"
 echo "Finish"
 echo "+++++++++++++++++++++++++++++"
