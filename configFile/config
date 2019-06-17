@@ -261,12 +261,12 @@ set $brightness_step 100
 #bindsym XF86MonBrightnessUp exec "/usr/local/bin/brightness" $brightness_step 
 #bindsym XF86MonBrightnessDown exec "/usr/local/bin/brightness" $brightness_step 
 
-# colors
-# class					border  backgr. text	indicator
-client.focused_inactive #2c2e2f #051929 #7B0C24
-client.focused			#5D0D1F #051929 #B40026 #B40026
-client.unfocused		#2c2e2f	#051929 #96223A	#96223A
-client.urgent			#87092D #051929 #FF0000
+# class                 border  bground text    indicator child_border
+client.focused          #4C7899 #285577 #FFFFFF #2E9EF4   #285577
+client.focused_inactive #333333 #5F676A #FFFFFF #484E50   #5F676A
+client.unfocused        #333333 #222222 #888888 #292D2E   #222222
+client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
