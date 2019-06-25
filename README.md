@@ -9,7 +9,7 @@ cd Dotfile-i3wm
 
 chmod +x install_i3wm.sh
 ```
-* Excute with your user
+# Excute with your user
 ```
 sudo ./install_i3wm.sh
 ```
